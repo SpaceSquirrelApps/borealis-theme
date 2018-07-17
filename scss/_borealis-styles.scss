@@ -1,0 +1,158 @@
+html{
+  -webkit-font-smoothing: antialiased;
+  // This needs to come after -webkit-font-smoothing
+  // stylelint-disable-next-line declaration-block-properties-order
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.btn-primary{
+  @include button-variant(#6371c7, #3f4eae);
+  @include transition($btn-transition);
+  @include gradient-y(#6371c7, #5563c1);
+}
+
+.btn-secondary{
+  @include button-variant($gray-100, $gray-400);
+  @include transition($btn-transition);
+  @include gradient-y($white, $gray-100);
+}
+
+.btn-danger{
+  @include button-variant(#ee6b50, #e83c19);
+  @include transition($btn-transition);
+  @include gradient-y(#ee6b50, #ec5b3e);
+}
+
+.btn-outline-secondary{
+  border-color:rgba(99,115,129,.4);
+  color: #374047;
+  @include hover-focus{
+    background: rgba(99,115,129,.05);
+    border-color: rgba(99,115,129,.4);
+  }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active {
+  background-color: $gray-200;
+  border-color: $gray-400;
+  box-shadow: inset 0 1px 4px rgba(99, 115, 129, 0.2);
+}
+
+.custom-control-label::before{
+  @include gradient-y($white, $gray-100);
+  border: 1px solid $gray-400;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before{
+  background-image: none;
+}
+
+.badge{border: 2px solid #fff;}
+.badge-secondary{color: #454f5b;background-color: #dfe3e8;}
+.badge-info{background-color: #b4e1fa;color: #3e4e57;}
+.badge-success{background-color: #bbe5b3;color: #414f3e;}
+.badge-warning{background-color: #ffc58b;color: #594430;}
+.badge-attention{background-color: #ffea8a;color: #595130;}
+
+.table thead th{border-width:1px;border-top:1px}
+
+.nav-polaris{
+  border-bottom:1px solid $gray-300;
+  .nav-item{
+    padding: 0 1rem 0 1rem;
+
+    .nav-link{
+      padding: 0.9rem 0 0.7rem 0;
+      border-bottom: 0.2rem solid transparent;
+      color:#637381;
+
+      @include hover-focus{
+        border-bottom-color:#c4cdd5
+      }
+
+      &.active {
+        border-bottom-color:#5c6ac4;
+        color: #212b35;
+      }
+    }
+  }
+}
+
+.list-group-item.active{border-left:3px solid $indigo}
+.table-active{border-left:2px solid $indigo}
+
+.alert {
+  display: flex;
+  color: $black;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: inset 0 0 0 0 transparent, 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+}
+
+.alert-ribbon {
+  flex: 0 0 3.2rem;
+  padding-right: 1.2rem;
+}
+
+.alert-ribbon .icon {
+  margin: 0.1rem 0.4rem;
+}
+
+.alert-ribbon .icon svg, .alert-ribbon .icon img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.footer-help {
+  width: auto;
+  border: 1px solid $gray-300;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  padding: 1.6rem 2rem 1.6rem 1.6rem;
+  justify-content: center;
+}
+
+.footer-help .footer-icon {
+  margin-right: .8rem;
+}
+
+.footer-help .footer-icon .icon{
+  display:block;
+}
+
+
+//
+// SVG ICON SYSTEM
+//
+
+.icon {
+  display: inline-flex;
+  align-self: center;
+}
+
+.icon svg, .icon img {
+  height: $font-size-base;
+  width: $font-size-base;
+  fill: currentColor;
+}
+
+.icon.baseline svg, .icon img {
+  top: .125rem;
+  position: relative;
+}
+
+.icon-sm svg, .icon-sm img{
+  height: $font-size-sm;
+  width: $font-size-sm;
+}
+
+.icon-lg svg, .icon-lg img{
+  height: $font-size-lg;
+  width: $font-size-lg;
+}
