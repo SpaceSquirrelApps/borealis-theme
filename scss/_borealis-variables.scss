@@ -1,6 +1,5 @@
 // Full list of variables at: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
 
-
 //
 // Grid containers
 //
@@ -160,13 +159,11 @@ $modal-footer-border-color: $gray-300;
 // Alerts
 //
 
-$alert-padding-y:                   1rem;
-$alert-padding-x:                   1rem;
-// $alert-margin-bottom:               1rem !default;
+$alert-padding-y: 1rem;
+$alert-padding-x: 1rem;
 $alert-border-radius: 3px;
-// $alert-link-font-weight:            $font-weight-bold !default;
-$alert-border-width:3px;
+$alert-border-width: 3px;
 
 $alert-bg-level: -11;
 $alert-border-level: 1;
-$alert-color-level: 0 ;
+$alert-color-level: 0;
