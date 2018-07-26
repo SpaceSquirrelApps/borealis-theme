@@ -12,579 +12,654 @@
   <link href="dist/css/borealis-theme.css" rel="stylesheet">
   <style type="text/css">
     body{background-color:#f4f6f8; }
+    .sidebar-sticky{position: sticky; top: 48px; height: calc(100vh - 48px); padding-top: .5rem; overflow-x: hidden; overflow-y: auto;}
   </style>
 </head>
 
 <body>
 
-<main class="container">
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Borealis Theme</a>
+  </nav>
 
-  <h1 class="mb-5">Headings
-    <a href="https://polaris.shopify.com/components/titles-and-text/heading#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/content/typography/#headings" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
+  <main class="container">
+    <div class="row">
+      <div class="col-12 col-md-3 col-xl-2 sidebar-sticky">
 
-  <div class="row no-gutters mt-5 mb-5">
-    <div class="col">
-      <h2>Online store dashboard H2</h2>
-      <h3>ACCONTS H3</h3>
-    </div>
-  </div>
-
-  <hr>
-
-  <h1 class="mt-5 mb-5">Display text
-    <a href="https://polaris.shopify.com/components/titles-and-text/display-text#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/content/typography/#display-headings" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
-
-  <div class="row no-gutters mt-5 mb-5">
-    <div class="col">
-      <h1 class="display-1">Display 1 Good evening, Dominic.</h1>
-      <h1 class="display-2">Display 2 Good evening, Dominic.</h1>
-      <h1 class="display-3">Display 3 Good evening, Dominic.</h1>
-    </div>
-  </div>
-
-  <hr>
-
-  <h1 class="mt-5 mb-5">Card Layout
-    <a href="https://polaris.shopify.com/components/structure/card#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/card/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
-
-  <div class="row no-gutters mt-5 mb-5">
-    <div class="col card">
-      <div class="card-body">
-        <h2 class="mb-4">Online store dashboard</h2>
-        <h3>REPORTS</h3>
-        <p>View a summary of your online store’s performance.</p>
-        <h3>SUMMARY</h3>
-        View a summary
-
-        <div class="text-right">
-          <a href="#" class="btn btn-primary">View Dashboard</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row no-gutters mt-5 mb-5">
-    <div class="col-md-4 mt-3">
-      <h2>Quick actions</h2>
-      <p>Select an option for a quick export</p>
-    </div>
-    <div class="col-md-8 card">
-      <div class="card-body">
-        <h3>ACTIONS</h3>
-        There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum
-      </div>
-    </div>
-  </div>
-
-  <h1 class="mt-5 mb-5">Forms
-    <a href="https://polaris.shopify.com/components/structure/card#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/forms/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
-
-  <div class="row no-gutters mt-5 mb-5">
-    <div class="col-md-4 mt-3">
-      <h2>Quick actions</h2>
-      <p>Select an option for a quick export</p>
-    </div>
-    <div class="col-md-8 card">
-      <div class="card-body">
-        <h3 class="mb-3">DETAILS</h3>
-          <form>
-            <div class="form-group">
-              <label for="text">Text</label>
-              <input id="text" class="form-control" name="text" type="text">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input id="email" class="form-control" name="email" type="email">
-            </div>
-
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input id="password" class="form-control" name="password" aria-describedby="passwordHelpBlock" type="password">
-              <small id="passwordHelpBlock" class="form-text text-muted">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
-              characters, or emoji.</small>
-            </div>
-
-            <div class="form-group">
-              <label for="select">Select</label>
-              <select name="select" id="select" class="form-control custom-select" aria-describedby="selectHelp">
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="4">Four</option>
-              </select>
-
-              <small id="selectHelp" class="form-text text-muted">Please select one option</small>
-            </div>
-          </form>
-      </div>
-    </div>
-  </div>
-
-  <hr>
-
-  <h1 class="mt-5 mb-5">Buttons
-    <a href="https://polaris.shopify.com/components/actions/button#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/buttons/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
-
-  <div class="mt-5 mb-5">
-    <p>
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-secondary">Secondary</button>
-      <button type="button" class="btn btn-danger">Danger</button>
-    </p>
-
-    <p>
-      <button type="button" class="btn btn-primary btn-lg">Large button</button>
-      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
-      <button type="button" class="btn btn-danger btn-lg">Large Danger</button>
-    </p>
-
-    <p>
-      <button type="button" class="btn btn-primary btn-sm">Small button</button>
-      <button type="button" class="btn btn-secondary btn-sm">Small button</button>
-      <button type="button" class="btn btn-danger btn-sm">Small Danger</button>
-    </p>
-
-    <p>
-      <button type="button" class="btn btn-outline-primary">Primary</button>
-      <button type="button" class="btn btn-outline-secondary">Secondary</button>
-      <button type="button" class="btn btn-outline-danger">Danger</button>
-    </p>
-  </div>
-
-  <hr>
-
-
- <h1 class="mt-5 mb-5">Checkboxes &amp; Radios
-    <a href="https://polaris.shopify.com/components/forms/checkbox#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/forms/#checkboxes-and-radios-1" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
-
-  <div class="mt-5 mb-3">
-    <div class="custom-control custom-checkbox">
-      <input type="checkbox" class="custom-control-input" id="customCheck1">
-      <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-    </div>
-  </div>
-
-  <div class="mb-5">
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-      <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-    </div>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-      <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-    </div>
-  </div>
-
-
-  <div class="mb-5">
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-secondary active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option2" autocomplete="off"> Radio
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option3" autocomplete="off"> Radio
-      </label>
-    </div>
-  </div>
-
-
-  <hr>
-
- <h1 class="mt-5 mb-5">Badges
-    <a href="https://polaris.shopify.com/components/images-and-icons/badge" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/badge/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
-
-  <div class="mt-5 mb-5">
-    <span class="badge badge-secondary">Secondary</span>
-    <span class="badge badge-info">Info</span>
-    <span class="badge badge-success">Success</span>
-    <span class="badge badge-danger">Danger</span>
-    <span class="badge badge-warning">Warning</span>
-    <span class="badge badge-attention">Attention</span>
-    <span class="badge badge-primary">Primary</span>
-  </div>
-
-  <hr>
-
-  <h1 class="mt-5 mb-5">Tables
-    <a href="https://polaris.shopify.com/visuals/data-visualizations#section-tables" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/content/tables/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
-
-  <div class=" mt-5 mb-5">
-
-    <div class="card">
-
-        <ul class="nav nav-polaris">
+        <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="#">All</a>
+            <a class="nav-link active" href="#introduction">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Published</a>
+            <a class="nav-link" href="#Headings">Headings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Drafts</a>
+            <a class="nav-link" href="#DisplayText">Display Text</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#CardLayout">Card layout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Forms">Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Buttons">Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#CheckboxesRadios">Checkboxes & Radios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Badges">Badges</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Tables">Tables</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#PolarisTabs">Polaris Tabs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#List">List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Alerts">Alerts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#FooterText">Footer Text</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#SVGIconSystem">SVG Icon System</a>
           </li>
         </ul>
-      <!-- <div class="card-header"></div> -->
-      <div class="card-body">
-        <table class="table table-hover mb-0">
-        <thead>
-          <tr>
-            <th></th>
-            <th scope="col">Title</th>
-            <th scope="col">Last Updated</th>
-            <th scope="col">Views</th>
-            <th scope="col">Positive</th>
-            <th scope="col">Neutral</th>
-            <th scope="col">Negative</th>
-            <th scope="col">Collection</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck2"><label class="custom-control-label" for="customCheck2"></label></div></th>
-            <td>Meet our Local Suppliers</td>
-            <td>about hour ago</td>
-            <td>340</td>
-            <td>80%</td>
-            <td>10%</td>
-            <td>10%</td>
-            <td><a href="#">General</a></td>
-            <td><span class="badge badge-info">Published</span></td>
-          </tr>
-          <tr class="table-active">
-            <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" checked="checked" class="custom-control-input" id="customCheck3"><label class="custom-control-label" for="customCheck3"></label></div></th>
-            <td>Learn about our natural cotton</td>
-            <td>2 days ago</td>
-            <td>31</td>
-            <td>79%</td>
-            <td>11%</td>
-            <td>10%</td>
-            <td><a href="#">Our Values</a></td>
-            <td><span class="badge badge-secondary">Draft</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck2"><label class="custom-control-label" for="customCheck2"></label></div></th>
-            <td>How to wash your new jeans</td>
-            <td>3 hours ago</td>
-            <td>4</td>
-            <td>0%</td>
-            <td>0%</td>
-            <td>0%</td>
-            <td><a href="#">General</a></td>
-            <td><span class="badge badge-info">Published</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck2"><label class="custom-control-label" for="customCheck2"></label></div></th>
-            <td>Meet our Local Suppliers</td>
-            <td>about hour ago</td>
-            <td>340</td>
-            <td>80%</td>
-            <td>10%</td>
-            <td>10%</td>
-            <td><a href="#">General</a></td>
-            <td><span class="badge badge-info">Published</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck2"><label class="custom-control-label" for="customCheck2"></label></div></th>
-            <td>Meet our Local Suppliers</td>
-            <td>about hour ago</td>
-            <td>340</td>
-            <td>80%</td>
-            <td>10%</td>
-            <td>10%</td>
-            <td><a href="#">General</a></td>
-            <td><span class="badge badge-info">Published</span></td>
-          </tr>
-        </tbody>
-        </table>
+
       </div>
-    </div>
 
-  </div>
-  <hr>
+      <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 pt-4">
 
+        <h1 id="Introduction">Introduction</h1>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-  <h1 class="mt-5 mb-5">Polaris Tabs
-    <a href="https://polaris.shopify.com/components/navigation/tabs" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/navs/#base-nav" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
+        <hr/>
 
-  <div class="row no-gutters mt-5 mb-5">
-    <div class="col card">
-      <div class="card-body">
-        <ul class="nav nav-polaris">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+        <h1 id="Headings" class="mt-5 mb-5">Headings
+          <a href="https://polaris.shopify.com/components/titles-and-text/heading#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/content/typography/#headings" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
 
-  <hr>
-
-  <h1 class="mt-5 mb-5">List
-    <a href="https://polaris.shopify.com/components/lists/resource-list#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/list-group/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
-
-  <div class=" mt-5 mb-5">
-    <h3>SIMPLE LIST</h3>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
-      </li>
-      <li class="list-group-item">
-        <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
-      </li>
-      <li class="list-group-item">
-        <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
-      </li>
-      <li class="list-group-item">
-        <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
-      </li>
-    </ul>
-  </div>
-
-  <div class=" mt-5 mb-5">
-    <h3>ACTION LIST</h3>
-    <ul class="list-group">
-      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-        <span class="display-3">General</span><span class="badge badge-info badge-pill">5 articles</span>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-        <span class="display-3">Product</span><span class="text-muted pull-right"><span class="badge badge-info">3 articles</span></span>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active">
-        <span class="display-3">Returns</span><span class="text-muted pull-right"><span class="badge badge-info">3 articles</span></span>
-      </a>
-      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-        <span class="display-3">Shipping</span><span class="text-muted pull-right"><span class="badge badge-warning">No articles</span></span>
-      </a>
-    </ul>
-  </div>
-
-  <hr>
-
-  <h1 class="mt-5 mb-5">Alerts
-    <a href="https://polaris.shopify.com/components/feedback-indicators/banner#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/alerts/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
-  </h1>
-
-  <div class=" mt-5 mb-5">
-    <div class="alert alert-success" role="alert">
-      <div class="alert-ribbon">
-        <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
-      </div>
-      <div>
-        <h2 class="alert-heading">Well done!</h2>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">
-          <a href="#" class="btn btn-outline-secondary">Read more</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class=" mt-5 mb-5">
-    <div class="alert alert-danger" role="alert">
-      <div class="alert-ribbon">
-        <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
-      </div>
-      <div>
-        <h2 class="alert-heading">Well done!</h2>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">
-          <a href="#" class="btn btn-outline-secondary">Read more</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class=" mt-5 mb-5">
-    <div class="alert alert-warning" role="alert">
-      <div>
-        <h2 class="alert-heading">Well done!</h2>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">
-          <a href="#" class="btn btn-outline-secondary">Read more</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class=" mt-5 mb-5">
-    <div class="alert alert-success" role="alert">
-      <div class="alert-ribbon">
-        <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
-      </div>
-      <div>
-        <h2 class="alert-heading">Well done!</h2>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">
-          <a href="#" class="btn btn-outline-secondary">Read more</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class=" mt-5 mb-5">
-    <div class="alert alert-danger" role="alert">
-      <div class="alert-ribbon">
-        <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
-      </div>
-      <div>
-        <h2 class="alert-heading">Well done!</h2>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">
-          <a href="#" class="btn btn-outline-secondary">Read more</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class=" mt-5 mb-5">
-    <div class="alert alert-warning" role="alert">
-      <div>
-        <h2 class="alert-heading">Well done!</h2>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">
-          <a href="#" class="btn btn-outline-secondary">Read more</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class=" mt-5 mb-5">
-    <div class="alert alert-info" role="alert">
-      <div>
-        <h2 class="alert-heading">Well done!</h2>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">
-          <a href="#" class="btn btn-outline-secondary">Read more</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class=" mt-5 mb-5">
-    <div class="alert alert-info" role="alert">
-      <div>
-        <h2 class="alert-heading">Well done!</h2>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">
-          <a href="#" class="btn btn-outline-secondary">Read more</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class=" mt-5 mb-5">
-    <div class="alert alert-light" role="alert">
-      <div>
-        <h2 class="alert-heading">Well done!</h2>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">
-          <a href="#" class="btn btn-outline-secondary">Read more</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <hr>
-
-  <h1 class="mt-5 mb-5">Footer Text
-    <a href="https://polaris.shopify.com/components/feedback-indicators/banner#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a>
-  </h1>
-
-  <div class="mt-5 mb-5">
-    <div class="d-flex justify-content-center">
-
-      <div class="footer-help">
-        <div class="footer-icon">
-          <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
+        <div class="row no-gutters mt-5 mb-5">
+          <div class="col">
+            <h2>Online store dashboard H2</h2>
+            <h3>ACCONTS H3</h3>
+            <pre>
+              <code class="html">
+&lt;h2&gt;Online store dashboard H2&lt;/h2&gt;
+&lt;h3&gt;ACCONTS H3&lt;/h3&gt;</code>
+            </pre>
+          </div>
         </div>
-        <div class="footer-text">
-          Learn more about <a href="https://help.shopify.com/manual/orders/fulfill-orders">fulfilling orders</a>.
+
+        <hr>
+
+        <h1 id="DisplayText" class="mt-5 mb-5">Display Text
+          <a href="https://polaris.shopify.com/components/titles-and-text/display-text#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/content/typography/#display-headings" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class="row no-gutters mt-5 mb-5">
+          <div class="col">
+            <h1 class="display-1">Display 1 Good evening, Dominic.</h1>
+            <h1 class="display-2">Display 2 Good evening, Dominic.</h1>
+            <h1 class="display-3">Display 3 Good evening, Dominic.</h1>
+          </div>
         </div>
+
+        <hr>
+
+        <h1 id="CardLayout" class="mt-5 mb-5">Card Layout
+          <a href="https://polaris.shopify.com/components/structure/card#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/card/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class="row no-gutters mt-5 mb-5">
+          <div class="col card">
+            <div class="card-body">
+              <h2 class="mb-4">Online store dashboard</h2>
+              <h3>REPORTS</h3>
+              <p>View a summary of your online store’s performance.</p>
+              <h3>SUMMARY</h3>
+              View a summary
+
+              <div class="text-right">
+                <a href="#" class="btn btn-primary">View Dashboard</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters mt-5 mb-5">
+          <div class="col-md-4 mt-3">
+            <h2>Quick actions</h2>
+            <p>Select an option for a quick export</p>
+          </div>
+          <div class="col-md-8 card">
+            <div class="card-body">
+              <h3>ACTIONS</h3>
+              There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum
+            </div>
+          </div>
+        </div>
+
+        <hr/>
+
+        <h1 id="Forms" class="mt-5 mb-5">Forms
+          <a href="https://polaris.shopify.com/components/structure/card#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/forms/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class="row no-gutters mt-5 mb-5">
+          <div class="col-md-4 mt-3">
+            <h2>Quick actions</h2>
+            <p>Select an option for a quick export</p>
+          </div>
+          <div class="col-md-8 card">
+            <div class="card-body">
+              <h3 class="mb-3">DETAILS</h3>
+                <form>
+                  <div class="form-group">
+                    <label for="text">Text</label>
+                    <input id="text" class="form-control" name="text" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" class="form-control" name="email" type="email">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password" class="form-control" name="password" aria-describedby="passwordHelpBlock" type="password">
+                    <small id="passwordHelpBlock" class="form-text text-muted">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
+                    characters, or emoji.</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="select">Select</label>
+                    <select name="select" id="select" class="form-control custom-select" aria-describedby="selectHelp">
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                    </select>
+
+                    <small id="selectHelp" class="form-text text-muted">Please select one option</small>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <h1 id="Buttons" class="mt-5 mb-5">Buttons
+          <a href="https://polaris.shopify.com/components/actions/button#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/buttons/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class="mt-5 mb-5">
+          <p>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+          </p>
+
+          <p>
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+            <button type="button" class="btn btn-danger btn-lg">Large Danger</button>
+          </p>
+
+          <p>
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+            <button type="button" class="btn btn-danger btn-sm">Small Danger</button>
+          </p>
+
+          <p>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+          </p>
+        </div>
+
+        <hr>
+
+
+       <h1 id="CheckboxesRadios" class="mt-5 mb-5">Checkboxes &amp; Radios
+          <a href="https://polaris.shopify.com/components/forms/checkbox#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/forms/#checkboxes-and-radios-1" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class="mt-5 mb-3">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+            </label>
+          </div>
+        </div>
+
+        <hr>
+
+       <h1 id="Badges" class="mt-5 mb-5">Badges
+          <a href="https://polaris.shopify.com/components/images-and-icons/badge" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/badge/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class="mt-5 mb-5">
+          <span class="badge badge-secondary">Secondary</span>
+          <span class="badge badge-info">Info</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-attention">Attention</span>
+          <span class="badge badge-primary">Primary</span>
+        </div>
+
+        <hr>
+
+        <h1 id="Tables" class="mt-5 mb-5">Tables
+          <a href="https://polaris.shopify.com/visuals/data-visualizations#section-tables" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/content/tables/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class=" mt-5 mb-5">
+
+          <div class="card">
+
+              <ul class="nav nav-polaris">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">All</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Published</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Drafts</a>
+                </li>
+              </ul>
+            <!-- <div class="card-header"></div> -->
+            <div class="card-body">
+              <table class="table table-hover mb-0">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Last Updated</th>
+                  <th scope="col">Views</th>
+                  <th scope="col">Positive</th>
+                  <th scope="col">Neutral</th>
+                  <th scope="col">Negative</th>
+                  <th scope="col">Collection</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck2"><label class="custom-control-label" for="customCheck2"></label></div></th>
+                  <td>Meet our Local Suppliers</td>
+                  <td>about hour ago</td>
+                  <td>340</td>
+                  <td>80%</td>
+                  <td>10%</td>
+                  <td>10%</td>
+                  <td><a href="#">General</a></td>
+                  <td><span class="badge badge-info">Published</span></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" checked="checked" class="custom-control-input" id="customCheck3"><label class="custom-control-label" for="customCheck3"></label></div></th>
+                  <td>Learn about our natural cotton</td>
+                  <td>2 days ago</td>
+                  <td>31</td>
+                  <td>79%</td>
+                  <td>11%</td>
+                  <td>10%</td>
+                  <td><a href="#">Our Values</a></td>
+                  <td><span class="badge badge-secondary">Draft</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck2"><label class="custom-control-label" for="customCheck2"></label></div></th>
+                  <td>How to wash your new jeans</td>
+                  <td>3 hours ago</td>
+                  <td>4</td>
+                  <td>0%</td>
+                  <td>0%</td>
+                  <td>0%</td>
+                  <td><a href="#">General</a></td>
+                  <td><span class="badge badge-info">Published</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck2"><label class="custom-control-label" for="customCheck2"></label></div></th>
+                  <td>Meet our Local Suppliers</td>
+                  <td>about hour ago</td>
+                  <td>340</td>
+                  <td>80%</td>
+                  <td>10%</td>
+                  <td>10%</td>
+                  <td><a href="#">General</a></td>
+                  <td><span class="badge badge-info">Published</span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" id="customCheck2"><label class="custom-control-label" for="customCheck2"></label></div></th>
+                  <td>Meet our Local Suppliers</td>
+                  <td>about hour ago</td>
+                  <td>340</td>
+                  <td>80%</td>
+                  <td>10%</td>
+                  <td>10%</td>
+                  <td><a href="#">General</a></td>
+                  <td><span class="badge badge-info">Published</span></td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+        <hr>
+
+
+        <h1 id="PolarisTabs" class="mt-5 mb-5">Polaris Tabs
+          <a href="https://polaris.shopify.com/components/navigation/tabs" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/navs/#base-nav" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class="row no-gutters mt-5 mb-5">
+          <div class="col card">
+            <div class="card-body">
+              <ul class="nav nav-polaris">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <h1 id="List" class="mt-5 mb-5">List
+          <a href="https://polaris.shopify.com/components/lists/resource-list#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/list-group/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class=" mt-5 mb-5">
+          <h3>SIMPLE LIST</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
+            </li>
+            <li class="list-group-item">
+              <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
+            </li>
+            <li class="list-group-item">
+              <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
+            </li>
+            <li class="list-group-item">
+              <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class=" mt-5 mb-5">
+          <h3>ACTION LIST</h3>
+          <ul class="list-group">
+            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+              <span class="display-3">General</span><span class="badge badge-info badge-pill">5 articles</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+              <span class="display-3">Product</span><span class="text-muted pull-right"><span class="badge badge-info">3 articles</span></span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active">
+              <span class="display-3">Returns</span><span class="text-muted pull-right"><span class="badge badge-info">3 articles</span></span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+              <span class="display-3">Shipping</span><span class="text-muted pull-right"><span class="badge badge-warning">No articles</span></span>
+            </a>
+          </ul>
+        </div>
+
+        <hr>
+
+        <h1 id="Alerts" class="mt-5 mb-5">Alerts
+          <a href="https://polaris.shopify.com/components/feedback-indicators/banner#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a> <a href="https://getbootstrap.com/docs/4.0/components/alerts/" class="btn btn-link btn-sm" target="_blank">Bootstrap guide</a>
+        </h1>
+
+        <div class=" mt-5 mb-5">
+          <div class="alert alert-success" role="alert">
+            <div class="alert-ribbon">
+              <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
+            </div>
+            <div>
+              <h2 class="alert-heading">Well done!</h2>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <p class="mb-0">
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mt-5 mb-5">
+          <div class="alert alert-danger" role="alert">
+            <div class="alert-ribbon">
+              <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
+            </div>
+            <div>
+              <h2 class="alert-heading">Well done!</h2>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <p class="mb-0">
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mt-5 mb-5">
+          <div class="alert alert-warning" role="alert">
+            <div>
+              <h2 class="alert-heading">Well done!</h2>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <p class="mb-0">
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mt-5 mb-5">
+          <div class="alert alert-success" role="alert">
+            <div class="alert-ribbon">
+              <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
+            </div>
+            <div>
+              <h2 class="alert-heading">Well done!</h2>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <p class="mb-0">
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mt-5 mb-5">
+          <div class="alert alert-danger" role="alert">
+            <div class="alert-ribbon">
+              <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
+            </div>
+            <div>
+              <h2 class="alert-heading">Well done!</h2>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <p class="mb-0">
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mt-5 mb-5">
+          <div class="alert alert-warning" role="alert">
+            <div>
+              <h2 class="alert-heading">Well done!</h2>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <p class="mb-0">
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class=" mt-5 mb-5">
+          <div class="alert alert-info" role="alert">
+            <div>
+              <h2 class="alert-heading">Well done!</h2>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <p class="mb-0">
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mt-5 mb-5">
+          <div class="alert alert-info" role="alert">
+            <div>
+              <h2 class="alert-heading">Well done!</h2>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <p class="mb-0">
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mt-5 mb-5">
+          <div class="alert alert-light" role="alert">
+            <div>
+              <h2 class="alert-heading">Well done!</h2>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <p class="mb-0">
+                <a href="#" class="btn btn-outline-secondary">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <h1 class="mt-5 mb-5">Footer Text
+          <a href="https://polaris.shopify.com/components/feedback-indicators/banner#navigation" class="btn btn-link btn-sm" target="_blank">Polaris guide</a>
+        </h1>
+
+        <div class="mt-5 mb-5">
+          <div class="d-flex justify-content-center">
+
+            <div class="footer-help">
+              <div class="footer-icon">
+                <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span>
+              </div>
+              <div class="footer-text">
+                Learn more about <a href="https://help.shopify.com/manual/orders/fulfill-orders">fulfilling orders</a>.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <hr>
+
+        <h1 id="SVGIconSystem" class="mt-5 mb-5">SVG Icon System
+          <a href="https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4" class="btn btn-link btn-sm" target="_blank">Guide</a>
+        </h1>
+
+        <div class="mt-5 mb-5">
+          <h3>Icons in buttons</h3>
+          <p>
+            <button type="button" class="btn btn-lg btn-outline-secondary"><span class="icon icon-lg baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> Large Button Icon</button>
+
+            <button type="button" class="btn btn-outline-secondary"><span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> Button Icon</button>
+
+            <button type="button" class="btn btn-sm btn-outline-secondary"><span class="icon icon-sm baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> Small Button Icon</button>
+
+          </p>
+          <p>
+            <h3>List Icons</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
+              </li>
+              <li class="list-group-item">
+                <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
+              </li>
+              <li class="list-group-item">
+                <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
+              </li>
+              <li class="list-group-item">
+                <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
+              </li>
+            </ul>
+          </p>
+
+        </div>
+
       </div>
-
     </div>
-  </div>
-
-  <hr>
-
-  <h1 class="mt-5 mb-5">SVG Icon System
-    <a href="https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4" class="btn btn-link btn-sm" target="_blank">Guide</a>
-  </h1>
-
-  <div class="mt-5 mb-5">
-    <h3>Icons in buttons</h3>
-    <p>
-      <button type="button" class="btn btn-lg btn-outline-secondary"><span class="icon icon-lg baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> Large Button Icon</button>
-
-      <button type="button" class="btn btn-outline-secondary"><span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> Button Icon</button>
-
-      <button type="button" class="btn btn-sm btn-outline-secondary"><span class="icon icon-sm baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> Small Button Icon</button>
-
-    </p>
-    <p>
-      <h3>List Icons</h3>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
-        </li>
-        <li class="list-group-item">
-          <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
-        </li>
-        <li class="list-group-item">
-          <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
-        </li>
-        <li class="list-group-item">
-          <span class="icon baseline"><svg><use xlink:href='#icons-backend-test-icon'/></svg></span> <b>Cras justo odio</b> by John Snow <span class="text-muted pull-right">Today, 1:14pm</span>
-        </li>
-      </ul>
-    </p>
-  </div>
-</main>
+  </main>
 
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
-  <symbol id="icons-backend-test-icon" viewBox="0 0 19 19">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <g id="Artboard" stroke="#212B36">
-        <g id="Article" transform="translate(2.000000, 1.000000)">
-        <polyline id="Shape" points="8.5862069 0.275862069 8.5862069 3 11.3103448 3"></polyline>
-        <polygon id="Shape" points="9.2539185 0 11.3103448 2.05469679 11.3103448 14.8965517 0 14.8965517 0 0"></polygon>
-        <polyline id="Shape" transform="translate(8.758621, 9.551724) scale(-1, 1) translate(-8.758621, -9.551724) " points="14.4137931 15.744352 14.4137931 17 3.10344828 17 3.10344828 2.10344828 5.18495298 2.10344828"></polyline>
-        <path d="M1.37931034,2.20689655 L6.5,2.20689655" id="Shape"></path>
-        <path d="M1.37931034,8.20689655 L9.50528783,8.20689655" id="Shape"></path>
-        <path d="M1.37931034,10.2068966 L9.50528783,10.2068966" id="Shape"></path>
-        <path d="M1.37931034,12.2068966 L9.50528783,12.2068966" id="Shape"></path>
-        <rect id="Rectangle-path" stroke-linejoin="round" x="1.65517241" y="4.31034483" width="6.06896552" height="2.20689655"></rect>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+    <symbol id="icons-backend-test-icon" viewBox="0 0 19 19">
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" stroke="#212B36">
+          <g id="Article" transform="translate(2.000000, 1.000000)">
+          <polyline id="Shape" points="8.5862069 0.275862069 8.5862069 3 11.3103448 3"></polyline>
+          <polygon id="Shape" points="9.2539185 0 11.3103448 2.05469679 11.3103448 14.8965517 0 14.8965517 0 0"></polygon>
+          <polyline id="Shape" transform="translate(8.758621, 9.551724) scale(-1, 1) translate(-8.758621, -9.551724) " points="14.4137931 15.744352 14.4137931 17 3.10344828 17 3.10344828 2.10344828 5.18495298 2.10344828"></polyline>
+          <path d="M1.37931034,2.20689655 L6.5,2.20689655" id="Shape"></path>
+          <path d="M1.37931034,8.20689655 L9.50528783,8.20689655" id="Shape"></path>
+          <path d="M1.37931034,10.2068966 L9.50528783,10.2068966" id="Shape"></path>
+          <path d="M1.37931034,12.2068966 L9.50528783,12.2068966" id="Shape"></path>
+          <rect id="Rectangle-path" stroke-linejoin="round" x="1.65517241" y="4.31034483" width="6.06896552" height="2.20689655"></rect>
+          </g>
         </g>
       </g>
-    </g>
-  </symbol>
-</svg>
+    </symbol>
+  </svg>
 
 </body>
 </html>
