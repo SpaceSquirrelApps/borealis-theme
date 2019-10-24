@@ -34,6 +34,7 @@ $green:   #50b83c;
 $teal:    #47c1bf;
 $cyan:    #17a2b8;
 $light-indigo: #F3F4FA;
+$violet: #5A68CA;
 
 $theme-colors: (
   "primary": $indigo,
@@ -100,7 +101,11 @@ $btn-focus-width: 0;
 //
 
 $custom-control-indicator-bg: $gray-400;
-$custom-checkbox-indicator-border-radius: 3px;
+$custom-checkbox-indicator-border-radius: 2px;
+$custom-control-indicator-checked-color:        $violet !default;
+$custom-control-indicator-checked-bg:           $light-indigo !default;
+$custom-control-indicator-checked-border-color: $violet !default;
+$custom-control-indicator-checked-box-shadow:   0px 0px 0px 1px $violet !default;
 
 //
 // Badges
