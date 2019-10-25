@@ -45,8 +45,20 @@ html{
   border: 1px solid $gray-400;
 }
 
+
 .custom-control-input:checked ~ .custom-control-label::before{
   background-image: none;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
+  background-size: $custom-control-indicator-checked-size;
+}
+
+.custom-radio {
+  .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .badge{
