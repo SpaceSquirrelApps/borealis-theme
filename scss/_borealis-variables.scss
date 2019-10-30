@@ -10,40 +10,41 @@ $container-max-widths: ( xl: 1140px );
 // Color system
 //
 
-$white:    #fff;
-$gray-100: #f9fafb;
-$gray-200: #f4f6f8;
-$gray-300: #dfe3e8;
-$gray-400: #c4cdd5;
-$gray-500: #919eab;
-$gray-600: #637381;
-$gray-700: #454f5b;
-$gray-800: #343a40;
-$gray-900: #212b36;
+$white:              #ffffff;
+$gray-100:           #f9fafb;
+$gray-200:           #f4f6f8;
+$gray-300:           #dfe3e8;
+$gray-400:           #c4cdd5;
+$gray-500:           #919eab;
+$gray-600:           #637381;
+$gray-700:           #454f5b;
+$gray-800:           #343a40;
+$gray-900:           #212b36;
 $gray-shopify-panel: #fafbfc;
-$black:    #000;
+$black:              #000000;
 
-$blue:    #007ace;
-$indigo:  #5c6ac4;
-$purple:  #9c6ade;
-$pink:    #e83e8c;
-$red:     #ed6347;
-$orange:  #f49342;
-$yellow:  #eec200;
-$green:   #50b83c;
-$teal:    #47c1bf;
-$cyan:    #17a2b8;
-$light-indigo: #F3F4FA;
+$blue:               #007ace;
+$indigo:             #5c6ac4;
+$purple:             #9c6ade;
+$pink:               #e83e8c;
+$red:                #ed6347;
+$orange:             #f49342;
+$yellow:             #eec200;
+$green:              #50b83c;
+$teal:               #47c1bf;
+$cyan:               #17a2b8;
+$light-indigo:       #F3F4FA;
+$violet:             #5A68CA;
 
 $theme-colors: (
-  "primary": $indigo,
+  "primary":     $indigo,
   "secondary": $gray-300,
-  "success": $green,
-  "info": $cyan,
-  "warning": $yellow,
-  "danger": $red,
-  "light": $gray-100,
-  "dark": $gray-800
+  "success":      $green,
+  "info":          $cyan,
+  "warning":     $yellow,
+  "danger":         $red,
+  "light":     $gray-100,
+  "dark":      $gray-800
 );
 
 
@@ -99,8 +100,15 @@ $btn-focus-width: 0;
 // Checkboxes and radios
 //
 
-$custom-control-indicator-bg: $gray-400;
-$custom-checkbox-indicator-border-radius: 3px;
+$custom-control-indicator-checked-size:         110% 110%;
+$custom-control-indicator-bg:                   $white;
+$custom-checkbox-indicator-border-radius:       3px;
+$custom-control-indicator-checked-bg:           $white;
+$custom-control-indicator-checked-color:        $violet !default;
+$custom-control-indicator-checked-bg:           $light-indigo !default;
+$custom-control-indicator-checked-border-color: $violet !default;
+$custom-control-indicator-checked-box-shadow:   0px 0px 0px 1px $violet !default;
+$custom-checkbox-indicator-icon-checked: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='#{$violet}' d='M8.315 13.859l-3.182-3.417a.506.506 0 0 1 0-.684l.643-.683a.437.437 0 0 1 .642 0l2.22 2.393 4.942-5.327a.437.437 0 0 1 .643 0l.643.684a.504.504 0 0 1 0 .683l-5.91 6.35a.437.437 0 0 1-.642 0'/%3e%3c/svg%3e"), "#", "%23");
 
 //
 // Badges
