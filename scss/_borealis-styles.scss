@@ -181,3 +181,11 @@ html{
   height: $font-size-lg;
   width: $font-size-lg;
 }
+
+//
+// INPUT GROUP
+//
+
+.input-group-text {
+  padding: $input-btn-padding-y-custom $input-btn-padding-x-sm;
+}
