@@ -49,6 +49,26 @@ html{
   background-image: none;
 }
 
+.custom-switch {
+  .custom-control-label {
+    &::before {
+      border-color: $gray-500;
+      background-color: $gray-500;
+      background-image: none;
+    }
+
+    &::after {
+      background-color: $gray-100;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+      background-color: $gray-100;
+    }
+  }
+}
+
 .badge{
   border: 2px solid #fff;
 }
