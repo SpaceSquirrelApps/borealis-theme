@@ -6,7 +6,7 @@ var gulp  = require('gulp'),
   postcss      = require('gulp-postcss'),
   autoprefixer = require('autoprefixer');
 
-gulp.task('build-theme', function() {
+gulp.task( 'build-theme', () => {
   return gulp.src(['scss/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -27,9 +27,9 @@ gulp.task('build-theme', function() {
     .pipe(gulp.dest('dist/css/'))
 });
 
-gulp.task('watch', ['build-theme'], function() {
-  gulp.watch(['scss/*.scss'], ['build-theme']);
+gulp.task('watch', () => {
+  gulp.watch( 'scss/*.scss', gulp.series('build-theme') );
 });
 
-gulp.task('default', ['build-theme'], function() {
-});
+
+exports.default = gulp.series('build-theme');

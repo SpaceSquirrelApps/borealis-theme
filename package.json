@@ -1,7 +1,7 @@
 {
     "title": "Bootstrap Polaris Theme",
     "name": "bootstrap-polaris-theme",
-    "version": "4.3.1",
+    "version": "4.4.1",
     "description": "Polaris inspired theme for Bootstrap.",
     "keywords": [
         "css",
@@ -25,21 +25,22 @@
         "url": "https://github.com/SpaceSquirrelApps"
     },
     "dependencies": {
-        "bootstrap": "^4.3.1",
-        "jquery": "^3.3.1",
+        "bootstrap": "^4.4.1",
+        "jquery": "^3.4.1",
         "natives": "^1.1.6",
-        "popper.js": "^1.14.6"
+        "node-sass": "^4.13.0",
+        "popper.js": "^1.16.0"
     },
     "devDependencies": {
-        "autoprefixer": "^8.2.0",
-        "gulp": "^3.9.1",
-        "gulp-clean-css": "^3.10.0",
-        "gulp-header": "2.0.1",
-        "gulp-postcss": "^7.0.1",
-        "gulp-rename": "^1.4.0",
+        "autoprefixer": "^9.7.3",
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-header": "2.0.9",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^2.0.0",
         "gulp-sass": "^4.0.2",
-        "gulp-scss-lint": "^0.6.1",
+        "gulp-scss-lint": "^1.0.0",
         "gulp-sourcemaps": "^2.6.5",
-        "jquery": "3.3.1"
+        "jquery": "3.4.1"
     }
 }
